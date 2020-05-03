@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "id": 3,
+      "title": "Angular service",
+      "content": "J'ai lu beaucoup de chose sur Angular, je vais bientôt essayer",
+      "authors": "Zerak (Maxime)"
+    },
+    {
+      "title": "Article 1",
+      "content": "Je suis l'article 1",
+      "authors": "Zerak",
+      "id": 4
+    },
+    {
+      "title": "Test2",
+      "content": "Deuxième article",
+      "authors": "Zerak",
+      "id": 5
+    },
+    {
+      "title": "Nav Bar",
+      "content": "Test",
+      "authors": "Zerak",
+      "id": 6
+    }
+  ]
+}

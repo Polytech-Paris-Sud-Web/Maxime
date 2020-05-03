@@ -1,0 +1,20 @@
+<a routerLink="/articles" >Liste des articles</a>
+<h2>Article</h2>
+<h3><i>Créé ton article</i></h3>
+<form [formGroup]="articleForm" (ngSubmit)="createArticle()">
+  <div class="form-group">
+    <label class="center-block">Titre:
+      <input class="form-control" formControlName="title">
+    </label>
+    <br />
+    <label class="center-block">Contenu:
+      <textarea class="form-control" formControlName="content"></textarea>
+    </label>
+    <br />
+    <label class="center-block">Auteur:
+      <input class="form-control" formControlName="authors">
+    </label>
+    <br />
+    <button class="btn btn-success" [disabled]="articleForm.invalid" type="submit">Sauvegarder</button>
+  </div>
+</form>
