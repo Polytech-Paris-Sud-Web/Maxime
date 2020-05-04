@@ -4,6 +4,7 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
+import { ArticleSearchComponent } from './article-search/article-search.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ArticleService } from './article.service';
 import { ArticleCreationComponent } from './article-creation/article-creation.component';
@@ -14,6 +15,7 @@ import { RouterModule, Routes } from '@angular/router';
 const appRoutes: Routes = [
   { path: 'create', component: ArticleCreationComponent },
   { path: 'articles', component: ArticlesComponent },
+  { path: 'search', component: ArticleSearchComponent },
   { path: '', component: ArticlesComponent }
 ]
 
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     AppComponent,
     ArticleComponent,
     ArticlesComponent,
-    ArticleCreationComponent
+    ArticleCreationComponent,
+    ArticleSearchComponent
   ],
   
   imports: [

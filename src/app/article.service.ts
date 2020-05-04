@@ -20,4 +20,12 @@ export class ArticleService {
   public add(newArticle : ArticleNoid): Observable<Article> {
     return this.http.post<Article>("http://localhost:3000/articles/", newArticle);
   }
+
+  public search(txt: string): Observable<Article[]> {
+    if (txt && txt.length > 0)
+      return this.http.get<Article[]>("http://localhost:3000/articles?q=" + txt);
+    else
+      return new Observable<Article[]>();
+
+  }
 }

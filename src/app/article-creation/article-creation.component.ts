@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ArticleService } from '../article.service';
 import { ArticleNoid, Article } from '../models/article';
 
@@ -18,9 +18,9 @@ export class ArticleCreationComponent implements OnInit {
 
   constructor(private fb: FormBuilder, private articleService : ArticleService) {
     this.articleForm = this.fb.group({
-      title: ['Faux titre', Validators.required ],
-      content : ['', Validators.required ],
-      authors : ['', Validators.required ],
+      title: ['Entrer un titre', Validators.required ],
+      content : ['Entrer du contenu', Validators.required ],
+      authors : ['Entrer un auteur', Validators.required ],
     });
   }
 
